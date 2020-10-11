@@ -1,0 +1,230 @@
+@import "reset.css";
+@import "common.css";
+/* 统一设置 */
+a{
+    color: #41ac52;
+}
+input[type="text"],input[type="password"]{
+    width: 100%;
+    height: 34px;
+    border: 1px solid #e4e6e5;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+input[type="text"].more-text-indent{
+    padding:0 40px 0 60px;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    line-height: 2;
+    padding: 30px 10px 10px 10px;
+    padding: 10px;
+    padding-top: 30px;
+    color: #9b9b9b;
+    box-sizing: border-box;
+    position: relative;
+}
+.container .login .switch-menu{
+    border-bottom: 1px solid #ececec;
+    font-size: 13px;
+}
+.container .login .switch-menu span{
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.container .login .switch-menu span.selected{
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #494949;
+    margin-bottom: -1px;
+}
+.container .login .form .form-item{
+    margin: 10px 0;
+    position: relative;
+    font-size: 13px;
+}
+.container .login .form .form-item .txt{
+    font-size: 12px;
+}
+.container .login .form .form-item .area-code{
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    left: 0;
+    top: 6px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-right: 1px solid #e4e6e5;
+    cursor: pointer;
+}
+.container .login .form .form-item .area-code .choose-area{
+/* 铺满整个视口，背景为半透明的白色 */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.container .login .form .form-item .area-code .choose-area .center{
+    width: 285px;
+    height: 225px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: auto;
+    overflow: hidden;
+}
+.container .login .form .form-item .area-code .choose-area .center .title{
+    background-color: #ebf5eb;
+    color: #060;
+    text-align: left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    height: 42px;
+    line-height: 42px;
+    font-weight: bold;
+}
+.container .login .form .form-item .area-code .choose-area .center .title .close{
+    color: #ccc;
+    padding-right: 10px;
+    line-height: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.container .login .form .form-item .area-code .choose-area .center ul{
+    height: 180px;
+    overflow: auto;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.container .login .form .form-item .area-code .choose-area .center ul li{
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: -1px;
+    cursor: pointer;
+}
+.container .login .form .form-item .area-code .choose-area .center ul li .right{
+    color: #aaa;
+    font-weight: normal;
+}
+.container .login .form .form-item .area-code .choose-area .center ul li.area-code-selected{
+    color: #42bd56;
+}
+.container .login .form .form-item .area-code .choose-area .center ul li.area-code-selected .right{
+    color: inherit;
+}
+.container .login .form .form-item .area-code .choose-area .center ul li.area-code-selected .iconfont{
+    margin-left: 10px;
+}
+.container .login .form .form-item .ab-right{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.container .login .form .form-item .btn{
+    width: 100%;
+    height: 34px;
+    font-size: 15px;
+}
+.container .login .form .form-item.tip{
+    font-size: 12px;
+    color: #333;
+}
+.container .login .buttom{
+    border-top: 1px solid #ddd;
+}
+.container .login .buttom .msg{
+    font-size: 11px;
+    vertical-align: 3px;
+}
+.container .login .buttom .iconfont{
+    margin-left: 12px;
+}
+.container .login .buttom .iconfont.iconweixin{
+    color: #59b834;
+}
+.container .login .buttom .iconfont.iconweibo{
+    color: #ea5d5c;
+}
+.container .qrcode{
+    font-size: 13px;
+}
+.container .qrcode .qrcode-title{
+    color: #333;
+    border-bottom: 1px solid #ececec;
+}
+.container .qrcode .code-img{
+    text-align: center;
+    font-size: 0;
+    margin-top: 20px;
+}
+.container .qrcode .code-img img{
+    width: 170px;
+    height: 170px;
+}
+.container .qrcode .qrcode-tip{
+    width: 183px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.08);
+    color: #494949;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.container .switch{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+}
+.container .switch .icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+}
+.container .switch .icon.password-switch{
+    background: url("../img/password-switch.png") no-repeat left top/100% 100%;
+}
+.container .switch .icon.qrcode-switch{
+    background: url("../img/qrcode-switch.png") no-repeat left top/100% 100%;
+}
+.container .switch:hover+.hover{
+    display: block;
+}
+.container .hover{
+    position: absolute;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid rgba(66,189,86,.3);
+    color: #666;
+    background-color: #f5faf9;
+    font-size: 13px;
+    right: 50px;
+    top: 2px;
+    border-radius: 3px;
+    padding: 0 5px;
+}
